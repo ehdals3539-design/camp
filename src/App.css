@@ -1,3 +1,8 @@
+/* 상세페이지 전환 애니메이션 */
+.fade-out {
+  opacity: 0;
+  transition: opacity 0.4s;
+}
 .App {
   text-align: center;
 }
@@ -24,9 +29,11 @@
   color: white;
 }
 
+
 .App-link {
   color: #61dafb;
 }
+/* (Reverted to simpler styles) */
 
 @keyframes App-logo-spin {
   from {
@@ -36,3 +43,236 @@
     transform: rotate(360deg);
   }
 }
+
+/* Global font */
+body {
+  font-family: 'SUIT', sans-serif !important;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* --- Coody-like header/hero (CSS only, no markup changes) --- */
+.App .navbar {
+  background: #fff !important;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.06);
+  padding-top: 44px;
+  padding-bottom: 14px;
+  position: sticky;
+  top: 0;
+  z-index: 1030;
+}
+
+.App .navbar.shadow-sm {
+  box-shadow: none !important;
+}
+
+.App .navbar::before {
+  content: '솔바람캠핑 구매혜택 CHECK! 제품 구매시 포인트 2% 적립 이벤트!';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 34px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #f6f6f6;
+  color: #333;
+  font-size: 12px;
+  letter-spacing: -0.2px;
+}
+
+.App .navbar .navbar-brand,
+.App .navbar .nav-link {
+  color: #111 !important;
+}
+
+.App .navbar .nav-link {
+  font-weight: 500;
+  opacity: 0.92;
+  padding-left: 12px;
+  padding-right: 12px;
+}
+
+.App .navbar .nav-link:hover {
+  opacity: 1;
+}
+
+.App .navbar .badge {
+  margin-left: 6px;
+  transform: translateY(-1px);
+}
+
+.App .navbar .navbar-brand img {
+  display: block;
+}
+
+.App .navbar .navbar-brand {
+  display: flex;
+  align-items: center;
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
+/* Hero banner */
+.slider {
+  position: relative; /* 추가 */
+  background-repeat: no-repeat;
+  z-index: 1;
+}
+
+.slider::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    180deg,
+    rgba(0, 0, 0, 0.18) 0%,
+    rgba(0, 0, 0, 0.35) 70%,
+    rgba(0, 0, 0, 0.38) 100%
+  );
+  z-index: 2; /* 이미지 위 */
+}
+
+.slider + h3,
+.slider + h3 + p {
+  position: relative;
+  z-index: 3; /* 텍스트 항상 위 */
+}
+
+@media (max-width: 768px) {
+  .App .navbar {
+    padding-top: 40px;
+    padding-bottom: 10px;
+  }
+  .slider {
+    height: 360px;
+    border-radius: 20px;
+  }
+  .slider + h3 {
+    margin-top: -250px !important;
+    font-size: 28px;
+  }
+  .slider + h3 + p + .container {
+    margin-top: 190px;
+  }
+}
+
+/* Layout helper */
+.container-narrow {
+  max-width: var(--max-content-width);
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 16px;
+  padding-right: 16px;
+}
+/* Product card styles - minimal with subtle shadow */
+.product-card {
+  padding: 20px;
+  margin-bottom: 40px;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+  transition: box-shadow 0.3s ease, transform 0.3s ease;
+}
+
+.product-card:hover {
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.12);
+  transform: translateY(-2px);
+}
+
+.product-img {
+  width: 100%;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+  border-radius: 6px;
+  transition: opacity 0.3s ease;
+}
+
+.product-card:hover .product-img {
+  opacity: 0.95;
+}
+
+.product-title {
+  font-size: 20px;
+  font-weight: 600;
+  margin-top: 12px;
+  margin-bottom: 10px;
+  line-height: 1.3;
+  text-align: center;
+}
+
+.product-desc {
+  font-size: 15px;
+  color: #555;
+  line-height: 1.6;
+  margin: 0 auto;
+  max-width: 80%;
+  text-align: center;
+}
+
+.product-price {
+  font-size: 18px;
+  font-weight: 700;
+  color: #2b7a0b;
+  margin-top: 15px;
+  text-align: center;
+}
+
+/* 한 줄 이상이면 말줄임 처리 */
+.product-title {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.product-desc {
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.product-img {
+  cursor: pointer;
+}
+.layout {
+  display: flex;
+  flex-direction: column;
+  min-height: auto;
+}
+
+.content {
+  flex: 0 0 auto;
+}
+
+/* Skeleton cards */
+.skeleton-img {
+  width: 100%;
+  height: 220px;
+  border-radius: 8px;
+  background: linear-gradient(90deg, #eee, #f6f6f6, #eee);
+  background-size: 200% 100%;
+  animation: skeleton 1.1s ease-in-out infinite;
+}
+
+.skeleton-line {
+  margin: 14px auto 0;
+  height: 14px;
+  width: 85%;
+  border-radius: 8px;
+  background: linear-gradient(90deg, #eee, #f6f6f6, #eee);
+  background-size: 200% 100%;
+  animation: skeleton 1.1s ease-in-out infinite;
+}
+
+.skeleton-line.short {
+  width: 55%;
+}
+
+@keyframes skeleton {
+  0% { background-position: 200% 0; }
+  100% { background-position: -200% 0; }
+}
+

@@ -1,0 +1,51 @@
+/* Board component styles */
+.board-container {
+  margin-top: 80px;
+}
+
+.comments {
+  margin-top: 20px;
+  background: #fafafa;
+  padding: 14px;
+  border-radius: 8px;
+  border: 1px solid #eee;
+}
+
+.comments h6 {
+  margin-bottom: 12px;
+  font-weight: 600;
+}
+
+.comment {
+  border-top: 1px solid #eee;
+  padding: 12px 0;
+  display: flex;
+  flex-direction: column;
+}
+.comment:first-child { border-top: none; }
+
+.comment-text {
+  font-size: 14px;
+  color: #222;
+  margin-bottom: 6px;
+}
+
+.comment-actions { margin-top: 6px; }
+.comment-actions .btn-link { padding: 0; font-size: 13px; color: #007bff; }
+
+.reply-list { margin-left: 14px; margin-top: 8px; }
+.reply { font-size: 13px; color: #555; padding: 4px 0; }
+
+.reply-input input.form-control,
+.comment-input input.form-control { margin-top: 8px; border-radius: 6px; }
+
+.btn-sm.btn-primary { padding: 4px 10px; font-size: 13px; }
+.btn-sm.btn-secondary { padding: 4px 8px; font-size: 13px; }
+
+.comment-input { margin-top: 12px; }
+
+/* Left align comments and make author visible */
+.comments { text-align: left; }
+.comment { align-items: flex-start; }
+.comment .comment-text { white-space: pre-wrap; }
+.reply { margin-left: 6px; }

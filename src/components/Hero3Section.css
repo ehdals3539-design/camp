@@ -1,0 +1,75 @@
+/* HeroSection과 동일한 이미지 스타일 적용 */
+.hero3-section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 56px;
+  max-width: 1400px;
+  margin: 0 auto 0 auto;
+  padding: 36px 32px;
+  background: #fff;
+  border-radius: 36px;
+  box-shadow: 0 2px 16px rgba(0,0,0,0.04);
+}
+.hero3-img-wrap {
+  flex: 1 1 0;
+  min-width: 320px;
+  max-width: 600px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.hero3-img {
+  width: 100%;
+  max-width: 600px;
+  border-radius: 36px;
+  object-fit: cover;
+  box-shadow: 0 2px 16px rgba(0,0,0,0.07);
+}
+.hero3-text {
+  flex: 1 1 0;
+  min-width: 320px;
+  max-width: 700px;
+  padding: 0 12px;
+}
+.hero3-text h2 {
+  font-size: 2.6rem;
+  font-weight: 700;
+  line-height: 1.2;
+  margin-bottom: 18px;
+  color: #222;
+}
+.hero3-highlight {
+  color: #ff6a1a;
+  font-weight: 800;
+  font-size: 2.7rem;
+  letter-spacing: -1px;
+}
+.hero3-desc {
+  font-size: 1.18rem;
+  color: #444;
+  margin-top: 18px;
+  line-height: 1.7;
+  white-space: pre-line;
+}
+@media (max-width: 1100px) {
+  .hero3-section {
+    flex-direction: column;
+    gap: 32px;
+    padding: 24px 8px;
+  }
+  .hero3-section.hero-reverse {
+    flex-direction: column;
+  }
+  .hero3-img-wrap, .hero-text {
+    max-width: 100%;
+    min-width: 0;
+  }
+  .hero3-img {
+    max-width: 100%;
+    border-radius: 24px;
+  }
+  .hero3-text h2, .hero-highlight {
+    font-size: 2rem;
+  }
+}
