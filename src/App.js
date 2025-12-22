@@ -10,6 +10,7 @@ import data from "./db/camp";
 import Products from "./components/Products";
 import { Routes, Route, useNavigate } from "react-router-dom";
 import Detail from "./components/Detail";
+import ScrollToTop from "./components/ScrollToTop";
 import NotFound from "./components/NotFound";
 import Title from "./components/Title";
 import Title2 from "./components/Title2";
@@ -100,6 +101,7 @@ function App() {
   return (
     <ToastProvider>
       <div className="App">
+      <ScrollToTop />
       <Navbar bg="dark" variant="dark" sticky="top" className="shadow-sm">
         <Container>
           <Navbar.Brand onClick={() => navigate("/")}>
@@ -215,7 +217,7 @@ function App() {
                       검색 결과가 없습니다.
                     </div>
                   ) : (
-                    filteredFruit.map((item) => <Products key={item.id} {...item} />)
+                    filteredFruit.map((item) => <Products key={item.id} {...item} />) 
                   )}
                 </div>
               </div>
