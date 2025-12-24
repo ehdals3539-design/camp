@@ -33,7 +33,8 @@
 
 <div align="center">
 
-![솔바람캠핑 로고](./public/img/screenshots/10-logo.png)
+![솔바람캠핑 로고]<img width="1919" height="1079" alt="스크린샷 2025-12-22 100948" src="https://github.com/user-attachments/assets/9b45b127-4990-4856-8787-008cfc9a0848" />
+
 
 </div>
 
@@ -66,7 +67,8 @@
 <div align="center">
 
 
-![메인 페이지]![Uploading 스크린샷 2025-12-22 101011.png…]()
+![메인 페이지]<img width="1919" height="1079" alt="스크린샷 2025-12-22 101011" src="https://github.com/user-attachments/assets/2a5ecb13-a0a2-484f-ab52-e4269f7cbfa2" />
+
 *메인 페이지 - 상품 검색, 정렬, 필터링 기능*
 
 </div>
@@ -97,7 +99,8 @@
 <div align="center">
 
 
-![장바구니]![Uploading 스크린샷 2025-12-22 101017.png…]()
+![장바구니]<img width="1919" height="1079" alt="스크린샷 2025-12-22 101017" src="https://github.com/user-attachments/assets/ecd21039-f4b2-4ebd-9bf5-d11a85c20363" />
+
 *장바구니 - Redux 상태 관리 및 실시간 수량 조절*
 
 </div>
@@ -144,11 +147,13 @@
 
 
 ### 상품 상세 페이지
-![상품 상세]![Uploading 스크린샷 2025-12-22 101014.png…]()
+![상품 상세]<img width="1919" height="1079" alt="스크린샷 2025-12-22 101014" src="https://github.com/user-attachments/assets/a4591260-d3d6-41ef-a201-cb4687687c87" />
+
 *React Router를 활용한 동적 라우팅 및 상품 상세 정보*
 
 ### 모달 UI
-![모달]![Uploading 스크린샷 2025-12-22 101026.png…]()
+![모달]<img width="1919" height="1079" alt="스크린샷 2025-12-22 101026" src="https://github.com/user-attachments/assets/993da7b0-fd87-4f28-b581-8094e9375de9" />
+
 *React Bootstrap Modal을 활용한 상품 상세 모달*
 
 </div>
@@ -600,19 +605,6 @@ React Hooks 최적화
 🎯 성능 최적화로 사용자 경험 개선  
 🎯 접근성 개선으로 포용적인 웹 구현  
 
----
-
-## 🤝 기여하기
-
-프로젝트에 기여하고 싶으시다면:
-
-1. **Fork** the Project
-2. Create your **Feature Branch** (`git checkout -b feature/AmazingFeature`)
-3. **Commit** your Changes (`git commit -m 'Add some AmazingFeature'`)
-4. **Push** to the Branch (`git push origin feature/AmazingFeature`)
-5. Open a **Pull Request**
-
----
 
 ## 📝 라이선스
 
@@ -643,11 +635,6 @@ React Hooks 최적화
 ---
 
 <div align="center">
-
-### ⭐ 이 프로젝트가 도움이 되셨다면 Star를 눌러주세요! ⭐
-
-![GitHub stars](https://img.shields.io/github/stars/ehdals3539-design/camp?style=social)
-![GitHub forks](https://img.shields.io/github/forks/ehdals3539-design/camp?style=social)
 
 **Made with ❤️ by ehdals3539-design**
 
