@@ -31,6 +31,12 @@
 
 ## 📖 프로젝트 소개
 
+<div align="center">
+
+![솔바람캠핑 로고](./public/img/screenshots/10-logo.png)
+
+</div>
+
 ### 🎯 프로젝트 개요
 
 **솔바람캠핑**은 "가족을 위한 캠핑"이라는 컨셉으로 제작된 React 기반 쇼핑몰 웹 애플리케이션입니다.
@@ -57,6 +63,13 @@
 
 ### 1️⃣ 상품 관리 시스템
 
+<div align="center">
+
+![메인 페이지](./public/img/screenshots/01-main-page.png)
+*메인 페이지 - 상품 검색, 정렬, 필터링 기능*
+
+</div>
+
 <table>
 <tr>
 <td width="50%">
@@ -80,6 +93,13 @@
 
 ### 2️⃣ 장바구니 시스템
 
+<div align="center">
+
+![장바구니](./public/img/screenshots/07-cart.png)
+*장바구니 - Redux 상태 관리 및 실시간 수량 조절*
+
+</div>
+
 - **Redux 전역 상태 관리** - 모든 페이지에서 접근 가능
 - **LocalStorage 영속화** - 새로고침해도 데이터 유지
 - **실시간 수량 조절** - +/- 버튼으로 즉시 변경
@@ -94,6 +114,13 @@
 
 ### 4️⃣ 게시판 시스템
 
+<div align="center">
+
+![게시판](./public/img/screenshots/05-board.png)
+*게시판 - CRUD 및 댓글/대댓글 시스템*
+
+</div>
+
 - **완벽한 CRUD** - 생성, 읽기, 수정, 삭제
 - **댓글 & 대댓글** - 2단계 댓글 시스템
 - **조회수 자동 증가** - 게시글 클릭 시 카운트
@@ -107,7 +134,29 @@
 
 ---
 
+## 📸 주요 화면
+
+<div align="center">
+
+### 상품 상세 페이지
+![상품 상세](./public/img/screenshots/06-detail-page.png)
+*React Router를 활용한 동적 라우팅 및 상품 상세 정보*
+
+### 모달 UI
+![모달](./public/img/screenshots/04-modal.png)
+*React Bootstrap Modal을 활용한 상품 상세 모달*
+
+</div>
+
+---
+
 ## 🛠 기술 스택
+
+<div align="center">
+
+![기술 스택](./public/img/screenshots/08-tech-stack.png)
+
+</div>
 
 ### Frontend
 
@@ -343,6 +392,12 @@ const handleAddComment = (postId) => {
 
 ## 🎯 프로젝트 강점
 
+<div align="center">
+
+![기획 의도 및 요구사항](./public/img/screenshots/09-project-goals.png)
+
+</div>
+
 ### 1️⃣ 체계적인 상태 관리
 
 ```
@@ -409,7 +464,19 @@ React Hooks 최적화
 
 ---
 
-## �🔧 향후 계획
+## 🔧 향후 계획
+
+<div align="center">
+
+### 배포 과정
+
+![배포 설정](./public/img/screenshots/02-deployment.png)
+*GitHub Pages 배포를 위한 package.json 설정*
+
+![배포 결과](./public/img/screenshots/03-deployment-result.png)
+*성공적인 배포 완료*
+
+</div>
 
 ### 🎯 단기 계획 (1-3개월)
 
