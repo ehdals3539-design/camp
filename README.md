@@ -405,7 +405,8 @@ const handleAddComment = (postId) => {
 
 <div align="center">
 
-![기획 의도 및 요구사항](./public/img/screenshots/09-project-goals.png)
+![기획 의도 및 요구사항]<img width="1919" height="1079" alt="스크린샷 2025-12-22 101004" src="https://github.com/user-attachments/assets/bb777b07-8134-42ba-b49d-02ade9066c54" />
+
 
 </div>
 
